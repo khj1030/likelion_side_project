@@ -15,9 +15,18 @@
       background-position: center;
       background-size: contain;
       background-color: black;
-
+      align-items: center;
+      text-align: center;
     }
- 
+    .button_img{
+      -webkit-filter: opacity(.0) drop-shadow(0 0 0 gray);
+      filter: opacity(.7) drop-shadow(0 0 0 gray);
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: calc(var(--vh, 1vh) * 70);
+      right: calc(var(--vh, 1vh) * 35.5);
+    }
   </style>
   <title>Document</title>
 </head>
@@ -30,6 +39,8 @@
     setScreenSize();
     window.addEventListener('resize', setScreenSize);
   </script>
+  <img class="button_img" src="right_arrow.png"> 
+
 
 </body>
 </html>
