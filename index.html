@@ -6,34 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="base.css">
   <style>
-    body {
-      width: 100vw;
-      height:calc(var(--vh, 1vh) * 100);
-      margin: 0;
-      background-image: url('introduction1.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      background-color: black;
-      align-items: center;
-      text-align: center;
-    }
-    .button_img{
-      -webkit-filter: opacity(.0) drop-shadow(0 0 0 gray);
-      filter: opacity(.7) drop-shadow(0 0 0 gray);
-      width: 30px;
-      height: 30px;
-      position: absolute;
-      /* top: calc(var(--vh, 1vh) * 70); */
-      /* left: calc(var(--vw, 1vw) * 68.5); */
-      top: 70vh;
-      left:61.5vw;
-    }
+    
   </style>
   <title>Document</title>
 </head>
 <body>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     function setScreenSize() {
       let vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -42,9 +20,22 @@
     }
     setScreenSize();
     window.addEventListener('resize', setScreenSize);
-  </script>
-  <img class="button_img" src="right_arrow.png"> 
-
+  </script> -->
+  <div class="introduction_img_box">
+    <!-- <img class="introduction_img" src="introduction1.png"> -->
+    <!-- <div class="button_container"> -->
+      <!-- <div class="button_box"> -->
+        <img class="button_img" src="right_arrow.png">
+      <!-- </div> -->
+    <!-- </div> -->
+  </div>
+  
+  <!-- <div class="img"> -->
+    <!-- <img class="button_img" src="right_arrow.png">  -->
+    <!-- <div class="button_img"></div> -->
+  <!-- </div> -->
+  <!-- <img class="introduction_img" src="introduction1.png" alt=""> -->
+  
 
 </body>
 </html>
