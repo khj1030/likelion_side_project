@@ -10,20 +10,6 @@
       margin: 0px;
       padding: 0px;
     }
-    /* body {
-      width: 100vw;
-      height:calc(var(--vh, 1vh) * 100);
-      margin: 0;
-      background-image: url('introduction1.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      background-color: black;
-      align-items: center;
-      text-align: center;
-      overflow: hidden;
-
-    } */
     body{
       text-align: center;
       background-color: black;
@@ -34,14 +20,8 @@
       top: 0;  
       bottom: 0;  
       margin: 0;
-
+      overflow: hidden;
     }
-    /* .img{
-      background-image: url('introduction1.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-    } */
     .introduction_img_box{
       background-image: url('introduction1.png');
       background-repeat: no-repeat;
@@ -50,37 +30,6 @@
       height:100%;
       margin: 0;
     }
-    .introduction_img {
-      height:100%; 
-      margin: 0;
-    }
-    /* .button_box{
-      width:100%;
-      height:100%;
-      position: absolute;
-      margin: 0;
-      left: 0;  
-      right: 0;  
-      top: 0;  
-      bottom: 0; 
-    } */
-    .button_container{
-      height:100%;
-      position:relative;
-    }
-    /* .button_box{
-      -webkit-filter: opacity(.0) drop-shadow(0 0 0 gray);
-      filter: opacity(.7) drop-shadow(0 0 0 gray);
-      background-image: url('right_arrow.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      position:absolute;
-      top:70%;
-      left:65%;
-      width:3%;
-      height:3%;
-    } */
     .button_img {
       -webkit-filter: opacity(.0) drop-shadow(0 0 0 gray);
       filter: opacity(.7) drop-shadow(0 0 0 gray);
@@ -93,31 +42,10 @@
   <title>Document</title>
 </head>
 <body>
-  <!-- <script type="text/javascript">
-    function setScreenSize() {
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-      let vw = window.innerWidth * 0.01;
-      document.documentElement.style.setProperty('--vw', `${vw}px`);
-    }
-    setScreenSize();
-    window.addEventListener('resize', setScreenSize);
-  </script> -->
+  
   <div class="introduction_img_box">
-    <!-- <img class="introduction_img" src="introduction1.png"> -->
-    <!-- <div class="button_container"> -->
-      <!-- <div class="button_box"> -->
-        <img class="button_img" src="right_arrow.png">
-      <!-- </div> -->
-    <!-- </div> -->
+    <img class="button_img" src="right_arrow.png">
   </div>
   
-  <!-- <div class="img"> -->
-    <!-- <img class="button_img" src="right_arrow.png">  -->
-    <!-- <div class="button_img"></div> -->
-  <!-- </div> -->
-  <!-- <img class="introduction_img" src="introduction1.png" alt=""> -->
-  
-
 </body>
 </html>
