@@ -10,11 +10,14 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="last.css">
 
+    
+
 
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <meta content="yes" name="apple-mobile-web-app-capable" />  
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" /> -->
     <title>소개페이지</title>
+    
     <style>
       * {
         box-sizing: border-box;
@@ -41,10 +44,18 @@
         display: block;
       }
 
+      .back {
+        display: inline-block;
+        height: 100vh;
+        width: 90%;
+        margin: 0;
+        background-color: black;
+      }
+
       .mainBox {
         display: inline-block;
         height: 100vh;
-        width: 65.666372462vh;
+        width: 64.666372462vh;
         margin: 0;
         background-image: url("intro_background.png");
         background-repeat: no-repeat;
@@ -122,25 +133,28 @@
   </head>
 
   <body>
-    <div class="mainBox">
-      <header>
-        <img id="log" src="likelion.png">
-      </header>
-
-      <div class="titleBox">
-        <img class="title" src="intro_title.png">
-      </div>
-
-      <div class="charBox">
-        <img class="character" src="intro_character.png">
-      </div>
-
-      <div class="textContainer">
-        <div class="textBox">
-          <div class="text"><img src="intro_text.png"></div>
-          <button type="button" class="btn"><img src="next_btn.png"></button>
+    <div class="back">
+      <div class="mainBox">
+        <header>
+          <img id="log" src="likelion.png">
+        </header>
+  
+        <div class="titleBox">
+          <img class="title" src="intro_title.png">
+        </div>
+  
+        <div class="charBox">
+          <img class="character" src="intro_character.png">
+        </div>
+  
+        <div class="textContainer">
+          <div class="textBox">
+            <div class="text"><img src="intro_text.png"></div>
+            <button type="button" class="btn"><img src="next_btn.png"></button>
+          </div>
         </div>
       </div>
     </div>
+    
   </body>
 </html>
