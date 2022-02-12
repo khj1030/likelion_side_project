@@ -1,287 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--   <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <!-- <script src="sc.js "></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="last.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-  <meta content="yes" name="apple-mobile-web-app-capable" />  
-  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
-   
-  <title>소개페이지</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    header {
-      display: inline-block;
-      background-color: #000000;
-      height: 5vh;
-      width: 98.94%; /*배경 가로사이즈에 맞추기위함 */
-    }
-
-    body {
-      width: 100%;
-      text-align: center;
-      background-color: black;
-    }
-
-    td:hover {
-      background: grey;
-    }
-
-    thead tr th {
-      writing-mode: vertical-rl;
-      text-orientation: upright;
-      text-align: right;
-    }
-
-    tbody tr th {
-      text-align: right;
-    }
-
-    #log {
-      width: auto;
-      height: 100%;
-      display: block;
-    }
-
-    .mainBox {
-      display: inline-block;
-      height: 100vh;
-      width: 65.666372462vh;
-      margin: 0;
-      background-image: url("intro_background.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-    /*********************************************************/
-    .titleBox {
-      height: 15vh;
-    }
-
-    .title {
-      width: 65%;
-      height: 11vh;
-    }
-
-    /* .subHeader {
-      height: 15vh;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .whiteBox {
-      background-color: white;
-      border-radius: 10%;
-      margin: 0px 10px;
-      text-align: center;
-    }
-
-    .title {
-      font-family: Roboto;
-      font-size: 135%;
-      width: 45%;
-      height: 13vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 20px;
-    } */
-
-    .charBox {
-      padding-top:14vh;
-    }
-
-    .character {
-      width: 65%;
-      height: 18vh;
-    }
-
-    .textContainer {
-      display: inline-block;
-      margin: 0;
-      background-image: url("intro_text_box.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      /* display: flex; */
-      margin-top: 4vh;
-      width: 55.666372462vh;
-      height: 33vh;
-      text-align: left;
-
-      /* height: 10vh; */
-      /* justify-content: center; */
-    }
-
-    .textBox {
-      margin-top: 14vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .text {
-      font-family: Roboto;
-      font-size: 100%;
-      width: 75%;
-      height: 10vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 20px;
-      margin-left: 5vh;
-    } 
-
-    .text img {
-      width: 100%;
-      height: auto;
-    }
-
-    .btn {
-      display: block;
-      width: 5.5vh;
-      height: 5.5vh;
-      margin-left: 1vh;
-    }
-
-    .btn img {
-      width: 100%;
-      height: auto;
-    }
-
-    /* .btn {
-      display: block;
-      width: 13vh;
-      height: 13vh;
-    }
-
-    .btn img {
-      width: 100%;
-      height: auto;
-    } */
-
-    /* .character {
-      width: 30%;
-      height: auto;
-    } */
-    /* .heart {
-      width: 15%;
-      height: auto;
-    }
-
-    .tableBox {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-    } */
-
-    th,
-    td {
-      border: 1px solid #bcbcbc;
-    }
-
-    table {
-      width: 58vh;
-      height: 58vh;
-      background-color: white;
-      border-radius: 20px;
-    }
-
-    .noLineTop {
-      border-top: none;
-    }
-
-    .noLineBottom {
-      border-bottom: none;
-    }
-
-    .noLineLeft {
-      border-left: none;
-    }
-
-    .noLineRight {
-      border-right: none;
-    }
-  </style>
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="last.css">
 
 
-  <div class="mainBox">
-    <header>
-      <img id="log" src="likelion.png">
-    </header>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable" />  
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" /> -->
+    <title>소개페이지</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-    <div class="titleBox">
-      <img class="title" src="intro_title.png">
-      <!-- <div class="title whiteBox">멋쟁이 사자처럼</div> -->
-      <!-- <div class="btn whiteBox"><img src="../sc_test/assets/check.png"></div> -->
-      <!-- <div class="btn whiteBox"><img src="../sc_test/assets/pass.png"></div> -->
-    </div>
+      header {
+        display: inline-block;
+        background-color: #000000;
+        height: 5vh;
+        width: 98.94%; /*배경 가로사이즈에 맞추기위함 */
+      }
 
-    <div class="charBox">
-      <img class="character" src="intro_character.png">
-      <!-- <div class="title whiteBox">멋쟁이 사자처럼</div> -->
-      <!-- <div class="btn whiteBox"><img src="../sc_test/assets/check.png"></div> -->
-      <!-- <div class="btn whiteBox"><img src="../sc_test/assets/pass.png"></div> -->
-    </div>
+      body {
+        width: 100%;
+        text-align: center;
+        background-color: black;
+      }
 
-    <div class="textContainer">
-      <!-- <img class="text" src="intro_text_box.png"> -->
-      <div class="textBox">
-        <div class="text"><img src="intro_text.png"></div>
-        <!-- <div class="text">멋사 10기 운영진 백승찬입니다!! <br>
-          작년 한해동안 멋사를 통해 많이 배우고 좋은시간 만들었던것처럼 올해는 운영진으로서 아기사자들과 함께하고 싶습니다~ 감사합니다!</div> -->
-        <button type="button" class="btn"><img src="next_btn.png"></button>
+      #log {
+        width: auto;
+        height: 100%;
+        display: block;
+      }
 
+      .mainBox {
+        display: inline-block;
+        height: 100vh;
+        width: 65.666372462vh;
+        margin: 0;
+        background-image: url("intro_background.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .titleBox {
+        height: 15vh;
+      }
+
+      .title {
+        width: 65%;
+        height: 11vh;
+      }
+
+      .charBox {
+        padding-top:14vh;
+      }
+
+      .character {
+        width: 65%;
+        height: 18vh;
+      }
+
+      .textContainer {
+        display: inline-block;
+        margin: 0;
+        background-image: url("intro_text_box.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-top: 4vh;
+        width: 55.666372462vh;
+        height: 33vh;
+        text-align: left;
+      }
+
+      .textBox {
+        margin-top: 14vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .text {
+        font-family: Roboto;
+        font-size: 100%;
+        width: 75%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        margin-left: 5vh;
+      } 
+
+      .text img {
+        width: 100%;
+        height: auto;
+      }
+
+      .btn {
+        display: block;
+        width: 5.5vh;
+        height: 5.5vh;
+        margin-left: 1vh;
+      }
+
+      .btn img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="mainBox">
+      <header>
+        <img id="log" src="likelion.png">
+      </header>
+
+      <div class="titleBox">
+        <img class="title" src="intro_title.png">
       </div>
-      <!-- <div class="btn whiteBox"><img src="../sc_test/assets/check.png"></div> -->
-      <!-- <div class="btn whiteBox"><img src="../sc_test/assets/pass.png"></div> -->
+
+      <div class="charBox">
+        <img class="character" src="intro_character.png">
+      </div>
+
+      <div class="textContainer">
+        <div class="textBox">
+          <div class="text"><img src="intro_text.png"></div>
+          <button type="button" class="btn"><img src="next_btn.png"></button>
+        </div>
+      </div>
     </div>
-
-    <!-- <div class="subHeader">
-      <div class="title whiteBox">멋쟁이 사자처럼</div>
-      <div class="btn whiteBox"><img src="../sc_test/assets/check.png"></div>
-      <div class="btn whiteBox"><img src="../sc_test/assets/pass.png"></div>
-    </div> -->
-
-    <!-- <div id="lifeBox">
-      <img src="../sc_test/assets/racoon.png" class="character">
-      <img src="../sc_test/assets/heart.png" class="heart" id="heart1">
-      <img src="../sc_test/assets/heart.png" class="heart" id="heart2">
-      <img src="../sc_test/assets/heart.png" class="heart" id="heart3">
-    </div> -->
-
-    <!-- <div class="tableBox">
-      <table>
-        <thead>
-          <script>
-            makeThead();
-          </script>
-        </thead>
-        <tbody>
-          <script>
-            makeTbody();
-          </script>
-        </tbody>
-      </table>
-    </div> -->
-
-  </div>
-
-</body>
-
+  </body>
 </html>
